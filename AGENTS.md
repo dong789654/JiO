@@ -10,7 +10,7 @@
 |------|------|
 | 프로젝트명 | 김지오 아기 홈페이지 |
 | 목적 | 아기 지오의 성장 기록을 담은 정적 웹페이지 |
-| 배포 URL | `https://dong789654.github.io/JiO/` |
+| 배포 URL | `https://dong789654.github.io/JiO/` (루트 직접 서빙) |
 | GitHub | `https://github.com/dong789654/JiO` |
 | 기술 스택 | HTML5 / CSS3 / Vanilla JS (빌드 도구 없음) |
 
@@ -41,12 +41,9 @@ ji-oh/
 │   ├── 디자인.md                  핵심 디자인 가이드 (색상·폰트·레이아웃)
 │   └── *.png                      레퍼런스 이미지
 │
-├── src/                           ← 실제 홈페이지 소스
-│   ├── index.html                 메인 페이지 (유일한 HTML)
-│   ├── style.css                  전체 스타일 (CSS 변수 기반)
-│   └── script.js                  인터랙션 (fade-up, nav 전환, hero 이미지)
-│
-├── index.html                     ← 루트 리다이렉트 (src/로 자동 이동)
+├── index.html                     ← 메인 페이지 (유일한 HTML)
+├── style.css                      전체 스타일 (CSS 변수 기반)
+├── script.js                      인터랙션 (fade-up, nav 전환, hero 이미지)
 │
 └── .github/
     ├── agents/
@@ -103,7 +100,7 @@ ji-oh/
 
 1. `data/` 폴더 이미지 파일 목록 조회 (`.gitkeep` 제외)
 2. `src/index.html` 갤러리 섹션 `<img>` 목록과 비교
-3. 추가된 파일 → 갤러리에 `<figure>` + `<img>` 태그 삽입
+3. 추가된 파일 → 갤러리에 `<figure>` + `<img>` 태그 삽입 (`home/index.html`)
 4. 삭제된 파일 → 해당 태그 제거
 5. CSS는 건드리지 않음
 
